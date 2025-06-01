@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background:black;
+}
+.container{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vedio{
+  width: 100%;
+  height: 50vh;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+width: 80%;
+margin-top: 100px;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 28vh;
+     cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+    animation: ScalAnimation .4s ease;
+    transition: transform 0.4s ease;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* Lightbox Styling */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.lightbox .close,
+.lightbox .prev,
+.lightbox .next {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lightbox .close {
+  top: 20px;
+  right: 30px;
+}
+
+.lightbox .prev {
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.lightbox .next {
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+.vedio-div{
+  /* width: 60%; */
+  /* width: 40%;
+  height: none; */
+  width: 90%;
+  height: 1vh;
+}
+@media(max-width:480px){
+  .gallery{
+      grid-template-columns: repeat(2, 1fr);
+
+  }
+  .lightbox img{
+    max-width: 50%;
+    min-height: 30%;
+  }
+}
