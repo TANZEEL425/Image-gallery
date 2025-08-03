@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Butterfly image Gallery</title>
-    <!-- Link-CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Butterfly Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div class="container">
-    
+    <h1 class="title">🦋 Butterfly Image Gallery</h1>
     <div class="gallery">
-  <img src="images/butterfly-1.jpg"/>
-  <img src="images/butterfly-2.jpg" />
-  <img src="images/butterfly-3.jpg"/>
-  <img src="images/butterfly-4.jpg" />
-  <img src="images/butterfly-5.jpg" />
+      <!-- Image Loop -->
+      <img src="images/butterfly-1.jpg" alt="Butterfly 1" />
+      <img src="images/butterfly-2.jpg" alt="Butterfly 2" />
+      <img src="images/butterfly-3.jpg" alt="Butterfly 3" />
+      <img src="images/butterfly-4.jpg" alt="Butterfly 4" />
+      <img src="images/butterfly-5.jpg" alt="Butterfly 5" />
+       <img src="images/butterfly-5.jpg" />
     <img src="images/butterfly-6.jpg"  />
   <img src="images/butterfly-7.jpg" />
   <img src="images/butterfly-8.jpg">
@@ -36,18 +38,18 @@
   <img src="images/butterfly-23.jpg" >
   <img src="images/butterfly-24.jpg" >
   <img src="images/buttrfly-25.jpg" >
+      <!-- Add more as needed -->
+    </div>
+  </div>
 
-</div>
-</div>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightboxImage" src="" alt="Enlarged Butterfly" />
+    <span class="prev" onclick="showPrev()">❮</span>
+    <span class="next" onclick="showNext()">❯</span>
+  </div>
 
-<!-- Lightbox Modal -->
-<div class="lightbox" id="lightbox">
-  <span class="close" onclick="closeLightbox()">×</span>
-  <img id="lightboxImage" src="" alt="">
-  <span class="prev" onclick="showPrev()">❮</span>
-  <span class="next" onclick="showNext()">❯</span>
-</div>
-<!-- LInk Script -->
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
