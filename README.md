@@ -1,0 +1,1 @@
+A responsive image gallery built using HTML, CSS, and JavaScript. It features a clean grid layout, hover effects, and adapts perfectly to all screen sizes. Ideal for portfolios, photography sites, or showcasing products.
